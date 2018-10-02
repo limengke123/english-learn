@@ -13,14 +13,13 @@ export default class EnglishModule extends React.Component {
     }
 
     render () {
-        console.log(style)
         const {title, wordArray} = this.props
         return (
             <div className={style.module}>
                 <header className={style.title}>{title}</header>
                 <div className={style.body}>
                     {
-                        wordArray.map(item => <WordListItem key={item.word} item={item}/>)
+                        wordArray.map((item, index) => <WordListItem key={item.word + index} item={{...item, index: index + 1}}/>)
                     }
                 </div>
             </div>

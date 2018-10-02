@@ -13,6 +13,7 @@ class IndexPage extends React.Component {
                         <img src={require('../../assert/logo.svg')} className={style.logo} alt="logo"/>
                         <div>英语单词练习</div>
                     </div>
+                    <div className={style.subTitle}>每天一点点的努力，坚持下去就能成功啦～～</div>
                     <div className={style["button-wrapper"]}>
                         <Button type={'primary'} onClick={() => history.push('/word')} block size={'large'}>单词列表</Button>
                     </div>

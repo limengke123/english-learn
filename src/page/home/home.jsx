@@ -3,7 +3,7 @@ import {compose} from 'redux'
 import {connect} from 'react-redux'
 import {withRouter} from 'react-router-dom'
 import propTypes from "prop-types"
-import EnglishModule from '../components/module/moudle'
+import EnglishModule from '../../components/module/moudle'
 import style from './home.module.scss'
 
 class HomePage extends React.Component{
