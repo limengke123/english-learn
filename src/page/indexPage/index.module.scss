@@ -7,4 +7,35 @@
   background-repeat: no-repeat;
   background-position: center 110px;
   background-size: 100%;
+  display: flex;
+  justify-content: center;
+  .main{
+    margin-top:200px;
+    .title{
+      font-size: 33px;
+      font-weight: 600;
+      color: rgba(0,0,0,.85);
+      display: flex;
+      .logo {
+        height: 70px;
+        width: 70px;
+        animation: App-logo-spin infinite 20s linear;
+      }
+      div {
+        align-self: center;
+      }
+    }
+    .button-wrapper {
+      margin: 20px 0;
+    }
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg)
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

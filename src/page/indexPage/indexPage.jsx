@@ -8,8 +8,18 @@ class IndexPage extends React.Component {
         const {history} = this.props
         return (
             <div className={style["index-page"]}>
-                <Button onClick={() => history.push('/word')}>单词列表</Button>
-                <Button onClick={() => history.push('/exam')}>单词训练</Button>
+                <main className={style.main}>
+                    <div className={style.title}>
+                        <img src={require('../../assert/logo.svg')} className={style.logo} alt="logo"/>
+                        <div>英语单词练习</div>
+                    </div>
+                    <div className={style["button-wrapper"]}>
+                        <Button type={'primary'} onClick={() => history.push('/word')} block size={'large'}>单词列表</Button>
+                    </div>
+                    <div>
+                        <Button type={'primary'} onClick={() => history.push('/exam')} block size={'large'}>单词训练</Button>
+                    </div>
+                </main>
             </div>
         )
     }
