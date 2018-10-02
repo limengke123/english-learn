@@ -4,6 +4,7 @@ import {connect} from 'react-redux'
 import {withRouter} from 'react-router-dom'
 import propTypes from "prop-types"
 import EnglishModule from '../components/module/moudle'
+import style from './home.module.scss'
 
 class HomePage extends React.Component{
     static propTypes = {
@@ -18,7 +19,7 @@ class HomePage extends React.Component{
     render(){
         const {wordList} = this.props
         return (
-            <div>
+            <div className={style.home}>
                 {
                     wordList.map(item => {
                         const {id, data} = item

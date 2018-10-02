@@ -1,6 +1,6 @@
 import React from 'react'
 import propTypes from 'prop-types'
-import WordListItem from '../wordListItem'
+import WordListItem from '../wordListItem/wordListItem'
 import style from './index.module.scss'
 
 export default class EnglishModule extends React.Component {
@@ -17,10 +17,12 @@ export default class EnglishModule extends React.Component {
         const {title, wordArray} = this.props
         return (
             <div className={style.module}>
-                <header>{title}</header>
-                {
-                    wordArray.map(item => <WordListItem key={item.word} item={item}/>)
-                }
+                <header className={style.title}>{title}</header>
+                <div className={style.body}>
+                    {
+                        wordArray.map(item => <WordListItem key={item.word} item={item}/>)
+                    }
+                </div>
             </div>
         )
     }

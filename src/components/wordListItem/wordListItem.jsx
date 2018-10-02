@@ -1,5 +1,6 @@
 import React from 'react'
 import propTypes from 'prop-types'
+import style from './index.module.scss'
 
 export default class WordListItem extends React.Component {
     static propTypes = {
@@ -12,9 +13,9 @@ export default class WordListItem extends React.Component {
     render () {
         const {word, translate} = this.props.item
         return (
-            <div>
-                <div>{word}</div>
-                <div>{translate}</div>
+            <div className={style["word-list-item"]}>
+                <div className={style.word}>{word}</div>
+                <div className={style.translate}>{translate}</div>
             </div>
         )
     }

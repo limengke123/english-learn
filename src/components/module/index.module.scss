@@ -1,4 +1,18 @@
+@import "../../style/var";
 .module {
-  font-weight: 700;
-  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  .title {
+    font-size: 20px;
+    font-weight: 700;
+    color: $grey;
+    text-align: center;
+    height:50px;
+    line-height: 50px;
+  }
+  .body {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
