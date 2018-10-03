@@ -1,0 +1,32 @@
+.exam-list-item{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 80px;
+  width: 25%;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.3s;
+  border-radius: 4px;
+  font-size: 18px;
+  &:hover {
+    background: rgba(0,0,0,.08);
+    transform: translate3d(2px, 2px, 4px);
+    font-weight: 700;
+  }
+  .word{
+    cursor: pointer;
+  }
+  .translate{
+    cursor: pointer;
+  }
+  .index{
+    position: absolute;
+    font-size: 16px;
+    font-weight: 700;
+    left: 40px;
+    top: 15px;
+    color: #1A2CBA;
+  }
+}

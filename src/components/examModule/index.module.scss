@@ -1,0 +1,20 @@
+@import "../../style/var";
+.exam-module {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 100%;
+  .title {
+    font-size: 20px;
+    font-weight: 700;
+    color: $grey;
+    text-align: center;
+    height:50px;
+    line-height: 50px;
+    border-bottom: 2px solid #5ABA7C;
+  }
+  .body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
