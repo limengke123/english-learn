@@ -1,6 +1,7 @@
 import React from 'react'
 import propTypes from 'prop-types'
 import {connect} from 'react-redux'
+import {Button} from 'antd'
 import style from './index.module.scss'
 import ExamModule from '../../components/examModule/examModule'
 
@@ -24,6 +25,9 @@ class ExamPage extends React.Component{
                         return <ExamModule title={id} wordArray={data} key={id}/>
                     })
                 }
+                <div className={style.submit}>
+                    <Button type={'primary'} size={'large'}>提交</Button>
+                </div>
             </div>
         )
     }

@@ -1,6 +1,8 @@
 import React from 'react'
 import propTypes from 'prop-types'
 import style from './index.module.scss'
+import ExamListItem from '../examListItem/examListItem'
+
 
 export default class ExamModule extends React.Component {
     static propTypes = {
@@ -18,6 +20,7 @@ export default class ExamModule extends React.Component {
                 <div className={style.body}>
                     {
                         // wordArray.map((item, index) => <WordListItem key={item.word + index} item={{...item, index: index + 1}}/>)
+                        wordArray.map((item, index)=> <ExamListItem key={item.word + index} item={{...item, index: index + 1}} />)
                     }
                 </div>
             </div>
