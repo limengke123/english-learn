@@ -15,6 +15,11 @@ class ExamPage extends React.Component{
             }))
         }))
     }
+
+    checkAnswer(){
+
+    }
+
     render(){
         const {wordList} = this.props
         return (
@@ -26,7 +31,7 @@ class ExamPage extends React.Component{
                     })
                 }
                 <div className={style.submit}>
-                    <Button type={'primary'} size={'large'}>提交</Button>
+                    <Button type={'primary'} size={'large'} onClick={this.checkAnswer}>提交</Button>
                 </div>
             </div>
         )
