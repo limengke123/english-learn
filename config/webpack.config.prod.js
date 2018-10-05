@@ -303,7 +303,7 @@ module.exports = {
                                         "style": "css"
                                     }
                                 ],
-                                ["transform-runtime", "transform-decorators-legacy"]
+                                // ["transform-runtime", "transform-decorators-legacy"]
                             ],
                             cacheDirectory: true,
                             // Save disk space when time isn't as important
